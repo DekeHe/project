@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+    
+    <h3>signup</h3>
+
+    <form action="/users/signup" method="post" id="signupForm">
+    
+        <div class="user">
+            <label for="username">username</label>
+            <input type="text" class="" id="username"
+            name="username">
+        </div>
+        
+        
+        <div class="user">
+            <label for="password">password</label>
+            <input type="text" class="" id="password"
+            name="password">
+        </div>
+
+        <div class="user">
+            <label for="email">email</label>
+            <input type="text" class="" id="email"
+            name="email">
+        </div>
+
+        <div class="user">
+            <label for="gender">gender</label>
+            <input type="text" class="" id="gender"
+            name="gender">
+        </div>
+
+        <button type="submit">signup</button>
+    </form>
+    {{#if hasError}}
+        <p id="error">{{error}}</p>
+    {{/if}}
+    <a href="/users/login">login</a>
+    
+</body>
+</html>
